@@ -4,8 +4,11 @@ import "./Header.css";
 
 const Header = () => {
     const [isActive, setIsActive] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
     const navRef = useRef(null);
     const burgerRef = useRef(null);
+    const headerRef = useRef(null);
+    const lastScrollY = useRef(0);
 
     const toggleMenu = () => {
         setIsActive((prev) => !prev);
@@ -27,8 +30,25 @@ const Header = () => {
         return () => document.removeEventListener("click", handleClickOutside);
     }, []);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > lastScrollY.current) {
+                setIsScrolled(true); // Додає клас при скролі вниз
+            } else {
+                setIsScrolled(false); // Забирає клас при скролі вгору
+            }
+
+            lastScrollY.current = currentScrollY;
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     return (
-        <header className="header">
+        <header ref={headerRef} className={`header ${isScrolled ? "scrolled" : ""}`}>
             <div className="header__container">
                 <a href="index.html" className="header__logo">
                     <img src={logo} alt="Header logo" />
@@ -58,7 +78,6 @@ const Header = () => {
                                 fill="#333333"
                             />
                         </svg>
-
                     </a>
                     <button className="header__button">Contact us</button>
                 </nav>
