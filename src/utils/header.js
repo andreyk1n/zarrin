@@ -1,8 +1,9 @@
-
 const header = () => {
     const burger = document.querySelector('.header__burger');
     const nav = document.querySelector('.header__nav');
     const body = document.body;
+
+    if (!burger || !nav) return; 
 
     const toggleMenu = () => {
         const isActive = burger.classList.toggle('active');
@@ -24,4 +25,4 @@ const header = () => {
     });
 };
 
-export default header;  
+export default header;
