@@ -50,7 +50,7 @@ const Header = () => {
     return (
         <header ref={headerRef} className={`header ${isScrolled ? "scrolled" : ""}`}>
             <div className="header__container">
-                <a href="index.html" className="header__logo">
+                <a href="/" className="header__logo">
                     <img src={logo} alt="Header logo" />
                 </a>
                 <div
