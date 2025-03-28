@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo.svg";
 import "./Footer.css";
 
@@ -11,10 +12,10 @@ const Footer = () => {
                     </a>
 
                     <nav className="footer__nav">
-                        <a href="/" className="footer__link">Home</a>
-                        <a href="/" className="footer__link">Blog</a>
-                        <a href="/" className="footer__link">About</a>
-                        <a href="/" className="footer__link">Contact us</a>
+                        <NavLink to="/" className="footer__link">Home</NavLink>
+                        <NavLink to="/blog" className="footer__link">Blog</NavLink>
+                        <NavLink to="/about" className="footer__link">About</NavLink>
+                        <NavLink to="/contacts" className="footer__link">Contact us</NavLink>
                     </nav>
 
                     <div className="footer__copyright">

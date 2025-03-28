@@ -1,27 +1,20 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo.svg";
 import "./Header.css";
 
 const Header = () => {
     const [isActive, setIsActive] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
-    const navRef = useRef(null);
-    const burgerRef = useRef(null);
-    const headerRef = useRef(null);
-    const lastScrollY = useRef(0);
+    const [lastScrollY, setLastScrollY] = useState(0);
 
-    const toggleMenu = () => {
+    const toggleMenu = useCallback(() => {
         setIsActive((prev) => !prev);
-    };
+    }, []);
 
     useEffect(() => {
         const handleClickOutside = (event) => {
-            if (
-                navRef.current &&
-                !navRef.current.contains(event.target) &&
-                burgerRef.current &&
-                !burgerRef.current.contains(event.target)
-            ) {
+            if (!event.target.closest(".header__nav") && !event.target.closest(".header__burger")) {
                 setIsActive(false);
             }
         };
@@ -33,43 +26,31 @@ const Header = () => {
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
-
-            if (currentScrollY > lastScrollY.current) {
-                setIsScrolled(true); // Додає клас при скролі вниз
+            if (currentScrollY > lastScrollY && currentScrollY > 50) {
+                setIsScrolled(true);
             } else {
-                setIsScrolled(false); // Забирає клас при скролі вгору
+                setIsScrolled(false);
             }
-
-            lastScrollY.current = currentScrollY;
+            setLastScrollY(currentScrollY);
         };
 
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    }, [lastScrollY]);
 
     return (
-        <header ref={headerRef} className={`header ${isScrolled ? "scrolled" : ""}`}>
+        <header className={`header ${isScrolled ? "scrolled" : ""}`}>
             <div className="header__container">
-                <a href="/" className="header__logo">
+                <NavLink to="/" className="header__logo">
                     <img src={logo} alt="Header logo" />
-                </a>
-                <div
-                    ref={burgerRef}
-                    className={`header__burger ${isActive ? "active" : ""}`}
-                    onClick={(e) => {
-                        e.stopPropagation();
-                        toggleMenu();
-                    }}
-                >
+                </NavLink>
+                <div className={`header__burger ${isActive ? "active" : ""}`} onClick={toggleMenu}>
                     <span></span>
                 </div>
-                <nav
-                    ref={navRef}
-                    className={`header__nav ${isActive ? "active" : ""}`}
-                >
-                    <a className="header__link" href="/blog">Blog</a>
-                    <a className="header__link" href="/about">About</a>
-                    <a className="header__search" href="/search">
+                <nav className={`header__nav ${isActive ? "active" : ""}`}>
+                    <NavLink className="header__link" to="/blog">Blog</NavLink>
+                    <NavLink className="header__link" to="/about">About</NavLink>
+                    <NavLink className="header__search" to="/search">
                         <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 fillRule="evenodd"
@@ -78,8 +59,8 @@ const Header = () => {
                                 fill="#333333"
                             />
                         </svg>
-                    </a>
-                    <button className="header__button">Contact us</button>
+                    </NavLink>
+                    <NavLink className="header__button" to="/contacts">Contact us</NavLink>
                 </nav>
             </div>
         </header>

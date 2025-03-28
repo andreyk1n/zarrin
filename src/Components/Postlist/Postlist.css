@@ -1,0 +1,32 @@
+.post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post {
+    display: flex;
+    gap: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.post__image {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.post__content {
+    flex: 1;
+}
+
+.post h2 a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.post__category, .post__date {
+    font-size: 14px;
+    color: #777;
+}

@@ -1,0 +1,19 @@
+.post-page {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.post__date {
+    color: #777;
+    font-size: 14px;
+}
+
+.post__image {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+
+.post__content {
+    line-height: 1.6;
+}

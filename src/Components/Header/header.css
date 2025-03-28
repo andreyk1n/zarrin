@@ -67,6 +67,7 @@
 }
 
 .header__button {
+    text-decoration: none;
     background-color: #7C4EE4;
     border: 3px solid #7C4EE4;
     padding: 13px 40px;
