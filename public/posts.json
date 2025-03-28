@@ -1,14 +1,15 @@
 [
     {
       "id": 1,
-      "title": "Перша стаття",
+      "title": "How AI will Change the Future",
       "views": 100,
       "slug": "persha-stattya",
       "date": "2025-03-24",
-      "content": "<h2>Привіт, світ!</h2><p>Це <strong>блог</strong> на React.</p><ul><li>Пункт 1</li><li>Пункт 2</li></ul><blockquote>Цитата</blockquote><p><img src='/images/post1.jpg' alt='Зображення'></p>",
-      "describe": "somesthing",
-      "image": "/images/post1.jpg",
-      "category": "Програмування"
+      "content": "<h1>How AI will Change the Future</h1><p>Це <strong>блог</strong> на React.</p><ul><li>Пункт 1</li><li>Пункт 2</li></ul><blockquote>Цитата</blockquote><p><img src='/images/post1.jpg' alt='Зображення'></p>",
+      "describe": "The future of AI will see home robots having enhanced intelligence, increased capabilities, and becoming more personal and possibly cute. For example, home robots will overcome navigation, direction",
+      "image": "blogImage1",
+      "category": "Програмування",
+      "pinned": "true"
     },
     {
       "id": 2,
@@ -19,7 +20,8 @@
       "content": "<p>React — це <strong>бібліотека для створення інтерфейсів</strong>. Вона дозволяє легко будувати компоненти.</p><h3>Основні можливості:</h3><ul><li>Компонентний підхід</li><li>JSX</li><li>Стан та хуки</li></ul>",
       "describe": "somesthing 2",
       "image": "/images/react.jpg",
-      "category": "Фронтенд"
+      "category": "Фронтенд",
+      "pinned": "false"
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "content": "<p>useState — це <em>React-хук</em>, який дозволяє додавати стан у функціональні компоненти.</p><pre><code>const [count, setCount] = useState(0);</code></pre><p>При зміні значення стану компонент перерендерюється.</p>",
       "describe": "somesthing describe about this article",
       "image": "/images/usestate.jpg",
-      "category": "React"
+      "category": "React",
+      "pinned": "false"
     }
   ]
   
