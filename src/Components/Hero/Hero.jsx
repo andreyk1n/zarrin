@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Hero.css";
 
-import blogImage1  from "../../assets/images/post1.jpg";
 
 const Hero = () => {
     const [pinnedPost, setPinnedPost] = useState(null);
@@ -30,7 +29,7 @@ const Hero = () => {
                     <p>{pinnedPost.describe}</p>
                     <Link to={`/blog/${pinnedPost.slug}`} className="hero__button">Read more</Link>
                 </div>
-                <img className="hero__image" src={blogImage1} alt="Hero post" />
+                <img src={pinnedPost.image} alt={pinnedPost.title} className="hero__image" draggable="false" />
             </div>
         </div>
     );

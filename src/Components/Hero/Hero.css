@@ -10,6 +10,35 @@
     justify-content: space-between;
     align-items: center;
     gap: 40px;
+    position: relative;
+}
+
+.hero__container::before {
+    content: '';
+    width: 100%;
+    max-width: 685px;
+    height: 378px;
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: -215px;
+    top: -300px;
+    background-image: url(/public/decor/hero-decor.png);
+}
+
+.hero__container::after {
+    content: '';
+    width: 100%;
+    max-width: 685px;
+    height: 378px;
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: -215px;
+    bottom: -300px;
+    background-image: url(/public/decor/hero-decor-2.png);
 }
 
 .hero__image {
@@ -23,6 +52,7 @@
 .hero__text {
     display: flex;
     flex-direction: column;
+    max-width: 570px;
 }
 
 .hero__text span {
@@ -83,7 +113,16 @@
     .hero {
         padding: 120px 0 40px 0;
     }
+
     .hero__container {
         flex-direction: column;
+    }
+
+    .hero__container::before {
+        left: 0;
+    }
+
+    .hero__container::after {
+        right: 0;
     }
 }

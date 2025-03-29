@@ -7,7 +7,7 @@
       "date": "2025-03-24",
       "content": "<h1>How AI will Change the Future</h1><p>Це <strong>блог</strong> на React.</p><ul><li>Пункт 1</li><li>Пункт 2</li></ul><blockquote>Цитата</blockquote><p><img src='/images/post1.jpg' alt='Зображення'></p>",
       "describe": "The future of AI will see home robots having enhanced intelligence, increased capabilities, and becoming more personal and possibly cute. For example, home robots will overcome navigation, direction",
-      "image": "blogImage1",
+      "image": "/images/blog1.jpg",
       "category": "Програмування",
       "pinned": "true"
     },
