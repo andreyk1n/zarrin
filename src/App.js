@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
 import Contacts from "./pages/Contacts";
+import Home from "./pages/Home";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import PostPage from "./Components/Postpage/Postpage";
@@ -14,14 +15,12 @@ function App() {
             <Header />
             <ScrollToTop />
             <Routes>
+                <Route path="/" element={<Home />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog/:slug" element={<PostPage />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contacts" element={<Contacts />} />
             </Routes>
-
-            <Hero />
-
             <Footer />
         </Router>
     );
