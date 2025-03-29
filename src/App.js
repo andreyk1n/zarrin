@@ -6,12 +6,13 @@ import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import PostPage from "./Components/Postpage/Postpage";
 import Hero from "./Components/Hero/Hero";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
 function App() {
     return (
         <Router>
             <Header />
-
+            <ScrollToTop />
             <Routes>
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog/:slug" element={<PostPage />} />

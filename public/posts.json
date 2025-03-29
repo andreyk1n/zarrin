@@ -19,7 +19,7 @@
       "date": "2025-03-25",
       "content": "<p>React — це <strong>бібліотека для створення інтерфейсів</strong>. Вона дозволяє легко будувати компоненти.</p><h3>Основні можливості:</h3><ul><li>Компонентний підхід</li><li>JSX</li><li>Стан та хуки</li></ul>",
       "describe": "somesthing 2",
-      "image": "/images/react.jpg",
+      "image": "/images/blog2.jpg",
       "category": "Фронтенд",
       "pinned": "false"
     },
@@ -31,7 +31,7 @@
       "date": "2025-03-26",
       "content": "<p>useState — це <em>React-хук</em>, який дозволяє додавати стан у функціональні компоненти.</p><pre><code>const [count, setCount] = useState(0);</code></pre><p>При зміні значення стану компонент перерендерюється.</p>",
       "describe": "somesthing describe about this article",
-      "image": "/images/usestate.jpg",
+      "image": "/images/blog3.jpg",
       "category": "React",
       "pinned": "false"
     }
