@@ -6,7 +6,6 @@ import Home from "./pages/Home";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import PostPage from "./Components/Postpage/Postpage";
-import Hero from "./Components/Hero/Hero";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
 function App() {
