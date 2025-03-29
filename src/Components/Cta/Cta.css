@@ -1,0 +1,109 @@
+.cta {
+    width: 100%;
+    padding: 120px 0;
+    background-color: #7C4EE4;
+    overflow: hidden;
+}
+
+.cta__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+}
+
+.cta__container::before {
+    content: '';
+    width: 100%;
+    max-width: 685px;
+    height: 378px;
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: -215px;
+    top: -300px;
+    background-image: url(/public/decor/hero-decor.png);
+}
+
+.cta__container::after {
+    content: '';
+    width: 100%;
+    max-width: 685px;
+    height: 378px;
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: -215px;
+    bottom: -300px;
+    background-image: url(/public/decor/hero-decor-2.png);
+}
+
+.cta__title {
+    max-width: 770px;
+    color: #fff;
+    font-size: clamp(24px, 5vw, 52px);
+    text-align: center;
+    font-weight: 700;
+    line-height: 108.333333%;
+    /* 52/48 */
+    margin-bottom: 15px;
+}
+
+.cta__text {
+    color: #bbb;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.cta__form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cta__input {
+    color: #5a7184;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 18px 23px;
+    border-radius: 8px;
+    outline: 0;
+    border: none;
+    min-width: 320px;
+    
+}
+
+.cta__button {
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    outline: 0;
+    cursor: pointer;
+    width: 100%;
+    padding: 16px 32px;
+    border-radius: 8px;
+    transition-duration: .5s;
+}
+
+.cta__button:hover {
+    color: #373737;
+    background-color: #fff;
+}
+
+@media (max-width: 576px) {
+    .cta__form {
+        flex-direction: column;
+    }
+
+    .cta__input, .cta__button, .cta__form {
+        min-width: 100%;
+        width: 100%;
+    }
+}

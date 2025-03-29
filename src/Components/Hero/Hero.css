@@ -2,6 +2,7 @@
     width: 100%;
     background-color: #7C4EE4;
     padding: 180px 0 100px 0;
+    overflow: hidden;
 }
 
 .hero__container {
@@ -87,7 +88,7 @@
     background-color: #fff;
     transition-duration: .5s;
     color: #373737;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 21px;
     border: 2px solid transparent;

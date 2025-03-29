@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./Postpage.css";
+import Cta from "../Cta/Cta";
 
 const PostPage = () => {
     const { slug } = useParams();
@@ -29,6 +30,8 @@ const PostPage = () => {
                 className="post__content"
                 dangerouslySetInnerHTML={{ __html: post.content }}
             />
+
+            <Cta />
         </div>
     );
 };

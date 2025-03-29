@@ -1,4 +1,10 @@
+import Cta from "../Components/Cta/Cta";
+
 const Contacts = () => {
-    return <h1>Contacts Page</h1>;
+    return (
+        <>
+        <Cta />
+        </>
+    );
 };
 export default Contacts;
