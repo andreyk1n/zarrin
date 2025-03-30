@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: "Raleway",sans-serif;
   overflow-x: hidden;
+  background-color: #FAFAFA;
 }
 
 [class*='__container'] {
