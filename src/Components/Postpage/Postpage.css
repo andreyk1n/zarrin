@@ -1,6 +1,16 @@
 .post-page {
-    max-width: 800px;
-    margin: 0 auto;
+    margin: 170px auto;
+}
+
+.post-page__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post__title {
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 700;
 }
 
 .post__date {
@@ -10,10 +20,33 @@
 
 .post__image {
     width: 100%;
-    height: auto;
-    margin: 15px 0;
+    max-height: 500px;
+    margin: 25px 0;
+    object-fit: cover;
 }
 
 .post__content {
-    line-height: 1.6;
+    line-height: 140%;
+    font-size: 18px;
+}
+
+.post__content article {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.post__content article h2, 
+.post__content article h3 {
+    margin-top: 15px;
+}
+
+.post__content article ul {
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .post-page {
+        margin: 120px 0 60px 0;
+    }
 }

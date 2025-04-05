@@ -1,0 +1,44 @@
+.content {
+    margin-top: 170px;
+}
+
+.content__container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.content__label {
+    color: #666;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.content__title {
+    color: #333;
+    font-size: clamp(33px, 5vw, 48px);
+    text-align: center;
+    font-weight: 700;
+    max-width: 728px;
+}
+
+.content__text {
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    max-width: 1000px;
+}
+
+.content__img {
+    width: 100%;
+    aspect-ratio:  42 / 20;
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin-top: 120px;
+    }
+}

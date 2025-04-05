@@ -1,10 +1,12 @@
 import PostList from "../Components/Postlist/Postlist";
 import Cta from "../Components/Cta/Cta";
+import ContentAbout from "../Components/ContentAbout/ContentAbout";
+
 
 const Blog = () => {
     return (
         <div className="blog">
-            <h1>Блог</h1>
+            <ContentAbout />
             <PostList />
             <Cta />
         </div>
