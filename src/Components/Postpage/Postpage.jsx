@@ -9,7 +9,7 @@ const PostPage = () => {
   const [post, setPost] = useState(null);
 
   useEffect(() => {
-    fetch("/posts.json")
+    fetch(`${process.env.PUBLIC_URL}/posts.json`)
       .then((res) => res.json())
       .then((data) => {
         const foundPost = data.find((p) => p.slug === slug);
