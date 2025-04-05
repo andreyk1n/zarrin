@@ -7,12 +7,12 @@ const Footer = () => {
         <>
             <footer className="footer">
                 <div className="footer__container">
-                    <a href="/" className="footer__logo">
+                    <a href="/zarrin" className="footer__logo">
                         <img src={logo} alt="Footer logo" />
                     </a>
 
                     <nav className="footer__nav">
-                        <NavLink to="/" className="footer__link">Home</NavLink>
+                        <NavLink to="/zarrin" className="footer__link">Home</NavLink>
                         <NavLink to="/blog" className="footer__link">Blog</NavLink>
                         <NavLink to="/about" className="footer__link">About</NavLink>
                         <NavLink to="/contacts" className="footer__link">Contact us</NavLink>

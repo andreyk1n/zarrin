@@ -6,8 +6,9 @@ const Popular = () => {
   const [posts, setPosts] = useState([]);
   const { slug } = useParams();
 
+  
   useEffect(() => {
-    fetch(`${process.env.PUBLIC_URL}/posts.json`)
+    fetch('https://andreyk1n.github.io/zarrin/posts.json')
       .then((res) => res.json())
       .then((data) => setPosts(data))
       .catch((error) => console.error("Помилка завантаження постів:", error));

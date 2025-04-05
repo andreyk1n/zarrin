@@ -7,7 +7,7 @@ const Hero = () => {
     const [pinnedPost, setPinnedPost] = useState(null);
 
     useEffect(() => {
-        fetch(`${process.env.PUBLIC_URL}/posts.json`)
+        fetch('https://andreyk1n.github.io/zarrin/posts.json')
             .then((res) => res.json())
             .then((data) => {
                 const pinned = data.find((post) => post.pinned === "true");

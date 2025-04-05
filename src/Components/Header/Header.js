@@ -41,7 +41,7 @@ const Header = () => {
     return (
         <header className={`header ${isScrolled ? "scrolled" : ""}`}>
             <div className="header__container">
-                <NavLink to="/" className="header__logo">
+                <NavLink to="/zarrin" className="header__logo">
                     <img src={logo} alt="Header logo" />
                 </NavLink>
                 <div className={`header__burger ${isActive ? "active" : ""}`} onClick={toggleMenu}>
