@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/zarring/static/css/main.06542ea6.css",
-    "main.js": "/zarring/static/js/main.ff3e1bd1.js",
-    "static/js/453.e33bcb79.chunk.js": "/zarring/static/js/453.e33bcb79.chunk.js",
-    "static/media/about-us.jpg": "/zarring/static/media/about-us.ee4f6f734bfa7a613741.jpg",
-    "static/media/hero-decor-2.png": "/zarring/static/media/hero-decor-2.490794d10709a57e2f63.png",
-    "static/media/hero-decor.png": "/zarring/static/media/hero-decor.1cfa87b37cba56dcacdc.png",
-    "static/media/logo.svg": "/zarring/static/media/logo.b8c75e769d12742d761832822abc7007.svg",
-    "index.html": "/zarring/index.html",
-    "main.06542ea6.css.map": "/zarring/static/css/main.06542ea6.css.map",
-    "main.ff3e1bd1.js.map": "/zarring/static/js/main.ff3e1bd1.js.map",
-    "453.e33bcb79.chunk.js.map": "/zarring/static/js/453.e33bcb79.chunk.js.map"
+    "main.css": "/zarrin/static/css/main.af29d0af.css",
+    "main.js": "/zarrin/static/js/main.1f206652.js",
+    "static/js/453.e33bcb79.chunk.js": "/zarrin/static/js/453.e33bcb79.chunk.js",
+    "static/media/about-us.jpg": "/zarrin/static/media/about-us.ee4f6f734bfa7a613741.jpg",
+    "static/media/hero-decor-2.png": "/zarrin/static/media/hero-decor-2.490794d10709a57e2f63.png",
+    "static/media/hero-decor.png": "/zarrin/static/media/hero-decor.1cfa87b37cba56dcacdc.png",
+    "static/media/logo.svg": "/zarrin/static/media/logo.b8c75e769d12742d761832822abc7007.svg",
+    "index.html": "/zarrin/index.html",
+    "main.af29d0af.css.map": "/zarrin/static/css/main.af29d0af.css.map",
+    "main.1f206652.js.map": "/zarrin/static/js/main.1f206652.js.map",
+    "453.e33bcb79.chunk.js.map": "/zarrin/static/js/453.e33bcb79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.06542ea6.css",
-    "static/js/main.ff3e1bd1.js"
+    "static/css/main.af29d0af.css",
+    "static/js/main.1f206652.js"
   ]
 }
